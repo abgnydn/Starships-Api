@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starships Table</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <h1>Starships Table</h1>
+  <div class="filter-container">
+    <label for="nameFilter">Name:</label>
+    <input type="text" id="nameFilter" name="nameFilter" placeholder="Enter name" />
+    <label for="sortOrder">Order:</label>
+    <select id="sortOrder">
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+    </select>
+    <label for="sortKey">Sort by:</label>
+    <select id="sortKey">
+      <option value="length">Length</option>
+      <option value="cost_in_credits">Cost</option>
+    </select>
+  </div>
+  <table id="starships">
+    <thead>
+      <tr id="starshipsTableHead">
+        <!-- <th>Name</th>
+        <th>Model</th>
+        <th>Cost (in credits)</th>
+        <th>Length</th> -->
+      </tr>
+    </thead>
+    <tbody id="starshipsTableBody"></tbody>
+  </table>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
